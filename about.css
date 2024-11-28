@@ -1,0 +1,361 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Changed background color */
+  color: #333;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50; /* Dark background color */
+  padding: 1rem 2rem;
+}
+
+.logo h1 {
+  color: #ecf0f1; /* Light text color */
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Burger Menu */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+}
+
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.about-header {
+
+  color: #2c3e50; /* Lighter text color for contrast */
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.about-header h1 {
+  
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Bio Section */
+.bio-section {
+  padding: 3rem 0;
+  background-color: #fff;
+ 
+}
+
+.bio-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bio-photo img {
+
+  max-width: 300px;
+  border-radius: 8%;
+ 
+  
+}
+.bio-photo img:hover{
+  transform: translateY(2%);
+  box-shadow: 0 12px 24px rgba(78, 78, 78, 0.2);  
+  transition: 0.8s;
+}
+
+.bio-details {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.bio-details h2 {
+  font-size: 2.5rem;
+  /* color: #333; */
+  color: #153B50;
+
+}
+
+.bio-details p {
+  margin: 1rem 0;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.bio-details h3 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  color: #153B50;
+
+}
+
+.bio-details ul {
+  margin-top: 1rem;
+  padding-left: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.bio-details ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #444;
+}
+
+/* Resume Download Button */
+.resume-download {
+  margin-top: 2rem;
+}
+
+.resume-download a {
+  display: inline-block;
+  background-color: #3498db; /* Updated button color */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.resume-download a:hover {
+  background-color: #2980b9; /* Darker shade for hover effect */
+}
+
+/* Fun Facts Section */
+.fun-facts-section {
+  background-color: #fff; 
+  padding: 3rem 0;
+
+  transition: box-shadow 0.3s ease;
+  border-radius: 10px; 
+}
+.fun-facts-section ul li:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  background-color: #153B50;
+  color: white;
+  transition: 0.8s;
+}
+
+.fun-facts-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #153B50;
+
+}
+
+.fun-facts-section p {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.fun-facts-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.fun-facts-section ul li {
+  font-size: 1.2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  color: #333;
+}
+
+/* Footer */
+.about-footer {
+  background-color: #2c3e50; /* Darker background for consistency with header */
+  color: #ecf0f1; /* Lighter text color */
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+.about-footer p {
+  font-size: 1rem;
+}
+
+.about-footer a {
+  color: #3498db; /* Consistent with button color */
+  text-decoration: none;
+}
+
+.about-footer a:hover {
+  text-decoration: underline;
+}
+
+/* aded animathion  */
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #2c3e50; /* Matches the navbar background color */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 1rem 0;
+    }
+  
+    .burger-menu {
+      display: flex;
+    }
+
+  .bio-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio-details {
+    margin-left: 0;
+  }
+
+  .bio-photo img {
+    margin-bottom: 1.5rem;
+  }
+  
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .bio-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio-details {
+    margin-left: 0;
+  }
+
+  .bio-photo img {
+    
+    margin-bottom: 1.5rem;
+  }
+  
+  .fun-facts-section ul {
+    flex-direction: column;
+  }
+}
+
+
+/* animation  */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+body{
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+0% { opacity: 0; transform: translateY(-20px); }
+100% { opacity: 1; transform: translateY(0); }
+}
+
+/* animation  */
+
+.bio-photo {
+  overflow: hidden; /* Ensures no part of the image is visible outside the container initially */
+  width: 100%; /* Adjust as per your layout */
+  max-width: 300px; /* Optional: Set a max width for the image */
+}
+
+#henishimg {
+  transition: all 0.5s ease; /* Smooth transition for any quick CSS changes */
+}
+
+
+.bio-details {
+  overflow: hidden; /* Prevent any visual overflow during animation */
+  transition: all 0.5s ease; /* Smooth transition for any quick CSS changes */
+}
+
+.bio-details {
+  overflow: hidden; /* Prevent overflow during animation */
+  transition: all 0.5s ease; /* Smooth transition for any quick changes */
+}
+
+
